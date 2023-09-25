@@ -1,0 +1,6 @@
+<div class="chat-container">
+    <div *ngFor="let chatline of chatLines">
+        <app-bubble-chat [message]="chatline.message" [isFirstPerson]="chatline.from === +currentUserId!"></app-bubble-chat>
+    </div>
+</div>
+
