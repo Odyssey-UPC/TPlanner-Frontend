@@ -11,6 +11,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { ChatLinesComponent } from './chatting/components/chat-lines/chat-lines.component';
 import { InputMessageComponent } from './chatting/components/input-message/input-message.component';
 import { ChatSectionComponent } from './chatting/components/chat-section/chat-section.component';
+import { HeaderAdvertisementComponent } from './advertisement/components/header/header.component';
+import { AdvertisementSectionComponent } from './advertisement/components/advertisement-section/advertisement-section.component';
+import { AdvertisementFormComponent } from './advertisement/components/advertisement-form/advertisement-form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,14 +21,17 @@ import { ChatSectionComponent } from './chatting/components/chat-section/chat-se
     BubbleChatComponent,
     ChatLinesComponent,
     InputMessageComponent,
-    ChatSectionComponent
+    ChatSectionComponent,
+    HeaderAdvertisementComponent,
+    AdvertisementSectionComponent,
+    AdvertisementFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
