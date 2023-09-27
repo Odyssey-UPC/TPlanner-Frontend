@@ -14,6 +14,8 @@ import { ChatSectionComponent } from './chatting/components/chat-section/chat-se
 import { HeaderAdvertisementComponent } from './advertisement/components/header/header.component';
 import { AdvertisementSectionComponent } from './advertisement/components/advertisement-section/advertisement-section.component';
 import { AdvertisementFormComponent } from './advertisement/components/advertisement-form/advertisement-form.component';
+import { AdvertisementInfoComponent } from './advertisement/components/advertisement-info/advertisement-info.component';
+import { AdvertisementDividerComponent } from './advertisement/components/advertisement-divider/advertisement-divider.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,9 @@ import { AdvertisementFormComponent } from './advertisement/components/advertise
     ChatSectionComponent,
     HeaderAdvertisementComponent,
     AdvertisementSectionComponent,
-    AdvertisementFormComponent
+    AdvertisementFormComponent,
+    AdvertisementInfoComponent,
+    AdvertisementDividerComponent
   ],
   imports: [
     BrowserModule,

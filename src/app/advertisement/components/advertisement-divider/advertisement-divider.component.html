@@ -1,0 +1,8 @@
+<div class="form">
+    <mat-list>
+        <div *ngFor="let adInfo of advertisementList">
+            <app-advertisement-info [name]="adInfo.name" [views]="adInfo.views" [clicks]="adInfo.clicks" [amount]="adInfo.amount" [serviceName]="adInfo.service_name" [redirectTo]="adInfo.redirectTo"></app-advertisement-info>
+            <mat-divider></mat-divider>
+        </div>      
+    </mat-list>
+</div>
