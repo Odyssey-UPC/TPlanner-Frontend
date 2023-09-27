@@ -6,6 +6,8 @@ export interface Advertisement {
     views: any
     clicks: any
     start_date: any
+    service_name: any
     deadline: any
     amount: any
+    redirectTo: any
 }
