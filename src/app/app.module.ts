@@ -16,6 +16,11 @@ import { AdvertisementSectionComponent } from './advertisement/components/advert
 import { AdvertisementFormComponent } from './advertisement/components/advertisement-form/advertisement-form.component';
 import { AdvertisementInfoComponent } from './advertisement/components/advertisement-info/advertisement-info.component';
 import { AdvertisementDividerComponent } from './advertisement/components/advertisement-divider/advertisement-divider.component';
+import { FormsModule } from '@angular/forms';
+import { FaqComponent } from './Frequently-Asked-Questions/components/faq/FaqComponent';
+import { QuestionFormComponent } from './Frequently-Asked-Questions/components/question-form/question-form.component';
+import { MatDialogModule } from '@angular/material/dialog';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +33,9 @@ import { AdvertisementDividerComponent } from './advertisement/components/advert
     AdvertisementSectionComponent,
     AdvertisementFormComponent,
     AdvertisementInfoComponent,
-    AdvertisementDividerComponent
+    AdvertisementDividerComponent,
+    FaqComponent,
+    QuestionFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,6 +43,8 @@ import { AdvertisementDividerComponent } from './advertisement/components/advert
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
+    FormsModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
