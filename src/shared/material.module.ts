@@ -9,6 +9,8 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
     imports: [
@@ -21,7 +23,9 @@ import {MatListModule} from '@angular/material/list';
         ReactiveFormsModule,
         MatSelectModule,
         MatDividerModule,
-        MatListModule
+        MatListModule,
+        MatButtonToggleModule,
+        MatTabsModule
     ],
     exports: [
         MatIconModule,
@@ -33,7 +37,9 @@ import {MatListModule} from '@angular/material/list';
         ReactiveFormsModule,
         MatSelectModule,
         MatDividerModule,
-        MatListModule
+        MatListModule,
+        MatButtonToggleModule,
+        MatTabsModule
     ],
 })
 export class MaterialModule { }

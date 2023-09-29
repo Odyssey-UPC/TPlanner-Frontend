@@ -16,6 +16,10 @@ import { AdvertisementSectionComponent } from './advertisement/components/advert
 import { AdvertisementFormComponent } from './advertisement/components/advertisement-form/advertisement-form.component';
 import { AdvertisementInfoComponent } from './advertisement/components/advertisement-info/advertisement-info.component';
 import { AdvertisementDividerComponent } from './advertisement/components/advertisement-divider/advertisement-divider.component';
+import { HeaderHomeComponent } from './home/components/header-home/header-home.component';
+import { SeekerHomeComponent } from './home/components/seeker-home/seeker-home.component';
+import { FilterHomeComponent } from './home/components/filter-home/filter-home.component';
+import { HomeSectionComponent } from './home/components/home-section/home-section.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +32,11 @@ import { AdvertisementDividerComponent } from './advertisement/components/advert
     AdvertisementSectionComponent,
     AdvertisementFormComponent,
     AdvertisementInfoComponent,
-    AdvertisementDividerComponent
+    AdvertisementDividerComponent,
+    HeaderHomeComponent,
+    SeekerHomeComponent,
+    FilterHomeComponent,
+    HomeSectionComponent
   ],
   imports: [
     BrowserModule,
