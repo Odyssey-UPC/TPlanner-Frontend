@@ -1,0 +1,9 @@
+<div [ngClass]="{'bubble-chat-wrapper': isFirstPerson, 'bubble-chat-wrapper-reverse': !isFirstPerson}">
+    
+    <div [ngClass]="{'bubble-chat': isFirstPerson, 'bubble-chat-reverse': !isFirstPerson}">
+        <p>
+            {{message}}
+        </p>
+    </div>
+
+</div>

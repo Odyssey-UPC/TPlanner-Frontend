@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 200px;
+}
+
+.service-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service-item {
+  width: calc(50% - 20px);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+mat-tab-group{
+  width: 70%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service-item img {
+  max-height: 200px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.service-name {
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 5px;
+  text-align: center;
+  text-decoration: underline;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  cursor: pointer;
+  font-family: 'Onest', sans-serif;
+  margin-top: 10px;
+}
+
+.service-description {
+  margin-top: 5px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+}
+
+.mat-tab-group {
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 480px) {
+  .service-row {
+    flex-direction: column;
+  }
+
+  mat-tab-group{
+    width: 70%;
+    margin: 0 auto;
+  }
+
+}

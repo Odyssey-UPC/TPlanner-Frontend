@@ -1,0 +1,27 @@
+.bubble-chat, .bubble-chat-reverse{
+    background-color: #f4f2f3;
+    border-radius: 10px 10px 0px 10px;
+    width: fit-content
+}
+
+.bubble-chat-reverse{
+    background-color: #fb684d;
+    border-radius: 10px 10px 10px 0px;
+}
+
+.bubble-chat p, .bubble-chat-reverse p{
+    padding: 10px;
+    padding-bottom: 5%;
+}
+
+.bubble-chat-wrapper, .bubble-chat-wrapper-reverse{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.bubble-chat-wrapper-reverse {
+    justify-content: flex-start;
+}

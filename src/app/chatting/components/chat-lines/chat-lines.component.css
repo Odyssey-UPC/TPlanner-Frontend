@@ -1,0 +1,11 @@
+.chat-container{
+    width: 50%;
+    max-width: 500px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+    padding-top: 2.25rem;
+    overflow: auto;
+    height: 480px;
+}

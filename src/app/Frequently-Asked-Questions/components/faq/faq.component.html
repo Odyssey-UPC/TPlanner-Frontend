@@ -1,0 +1,22 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="container">
+  <div class="row">
+    <div class="container-faq">
+      <div class="title-faq">
+        <h1>Frequently Asked Questions:</h1>
+      </div>
+
+      <div *ngFor="let q of questions; let i = index" class="item-faq">
+        <div class="question" (click)="toggleAnswer(i)">
+          <h2>{{ q.question }}</h2>
+          <div class="more"><mat-icon>{{ q.showAnswer ? "expand_less" :"expand_more" }}</mat-icon></div>
+        </div>
+        <div class="answer" [style.height.px]="q.showAnswer ? q.answerHeight : 0">
+          <p [innerHTML]="q.answer"></p>
+        </div>
+      </div>
+      
+      <button (click)="openQuestionForm()" class="submit-button">Submit Your Question</button>
+    </div>
+  </div>
+</div>

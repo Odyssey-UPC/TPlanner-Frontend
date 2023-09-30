@@ -1,0 +1,20 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<mat-toolbar class="custom-toolbar" color="primary">
+    <div class="left-section">
+      <img src="https://cdn.discordapp.com/attachments/1037343952694685706/1154450240301191308/image.png?ex=65145491&is=65130311&hm=af82a4c1f8cc4a9a7a004efbd10c3628845a7be8ac7b8e90ba6b3ac5849984c8&" alt="Imagen de perfil">
+      <span>Hello Cris!</span>
+    </div>
+    <div class="center-section">
+      <img src="https://cdn.discordapp.com/attachments/1037343952694685706/1156438395032174592/logo_3.png?ex=6514f8ae&is=6513a72e&hm=67e493f1b3f51b8b8a53236680b820c0140ae1a95d3bf6a5ab9e4c5492898cb1&" alt="Logo de la app">
+    </div>
+    <div class="right-section">
+      <div class="location">
+        <i class="material-icons">location_on</i>
+        <span>Lima, Peru</span>
+      </div>
+      <button mat-icon-button class="example-icon" aria-label="Mostrar/Ocultar información" (click)="mostrarOcultarInfo()">
+        <mat-icon>{{ mostrarInfo ? 'expand_less' : 'expand_more' }}</mat-icon>
+      </button>
+    </div>
+</mat-toolbar>

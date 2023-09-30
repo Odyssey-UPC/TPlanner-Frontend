@@ -1,0 +1,61 @@
+<div class="filter-container">
+  <div class="filter-content">
+    <mat-tab-group class="filter-options">
+      <mat-tab label="Activities">
+        <div class="service-grid">
+          <div class="service-row">
+            <div class="service-item" *ngFor="let activity of touristServiceCategory1; let i = index">
+              <img src="{{activity.thumbnails[0].image_link}}" alt="{{ activity.service_name }}">
+              <div class="service-details">
+                <button class="service-name">{{ activity.service_name }}</button>
+                <p class="service-description">{{ activity.service_description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+
+      <mat-tab label="Hotels">
+        <div class="service-grid">
+          <div class="service-row">
+            <div class="service-item" *ngFor="let hotel of touristServiceCategory2; let i = index">
+              <img src="{{hotel.thumbnails[0].image_link}}" alt="{{ hotel.service_name }}">
+              <div class="service-details">
+                <button class="service-name">{{ hotel.service_name }}</button>
+                <p class="service-description">{{ hotel.service_description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+
+      <mat-tab label="Restaurants">
+        <div class="service-grid">
+          <div class="service-row">
+            <div class="service-item" *ngFor="let restaurant of touristServiceCategory3; let i = index">
+              <img src="{{restaurant.thumbnails[0].image_link}}" alt="{{ restaurant.service_name }}">
+              <div class="service-details">
+                <button class="service-name">{{ restaurant.service_name }}</button>
+                <p class="service-description">{{ restaurant.service_description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+
+      <mat-tab label="Tours">
+        <div class="service-grid">
+          <div class="service-row">
+            <div class="service-item" *ngFor="let tour of touristServiceCategory4; let i = index">
+              <img src="{{tour.thumbnails[0].image_link}}" alt="{{ tour.service_name }}">
+              <div class="service-details">
+                <button class="service-name">{{ tour.service_name }}</button>
+                <p class="service-description">{{ tour.service_description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>
