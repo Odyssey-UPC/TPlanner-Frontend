@@ -1,7 +1,7 @@
 <div class="login-container">
   
     <mat-card class="login-card">
-      <h2>Inicio de Sesión</h2>
+      <h2>Log In</h2>
       <div class="input-email">
         <form class="input-form" (ngSubmit)="login()">
           <mat-form-field class="example-full-width">
@@ -23,7 +23,6 @@
         <mat-form-field class="example-full-width">
           <mat-label>Password</mat-label>
           <input type="password" matInput [formControl]="passwordFormControl" [errorStateMatcher]="matcher" placeholder="Password" class="input-password">
-          <!-- Resto del código... -->
         </mat-form-field>
       </div>
   

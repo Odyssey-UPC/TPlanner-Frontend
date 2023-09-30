@@ -1,8 +1,7 @@
 <div class="create-account-container">
     <mat-card class="create-account-card">
-      <h2>Registro</h2>
+      <h2>Register</h2>
   
-      <!-- Nombre y Apellido -->
       <div class="input-name">
         <mat-form-field class="input-field">
           <mat-label>First Name</mat-label>
@@ -15,7 +14,6 @@
         </mat-form-field>
       </div>
   
-        <!-- Email -->
         <div class="input-email">
           <form class="input-form" (ngSubmit)="login()">
             <mat-form-field class="example-full-width">
@@ -33,26 +31,20 @@
           </form>
         </div>
         
-  <!-- Contraseña -->
   <div class="input-password">
     <mat-form-field class="example-full-width">
       <mat-label>Password</mat-label>
       <input type="password" matInput [formControl]="passwordFormControl" [errorStateMatcher]="matcher" placeholder="Password" class="input-password">
-      <!-- Resto del código... -->
     </mat-form-field>
   </div>
   
-  <!-- Confirmar Contraseña -->
   <div class="input-confirm-password">
     <mat-form-field class="example-full-width">
       <mat-label>Confirm Password</mat-label>
       <input type="password" matInput [formControl]="confirmPasswordFormControl" [errorStateMatcher]="matcher" placeholder="Confirm Password" class="input-confirm-password">
-      <!-- Resto del código... -->
     </mat-form-field>
   </div>
   
-  
-      <!-- Fecha de Nacimiento -->
       <mat-form-field>
         <mat-label>Choose a date</mat-label>
         <input matInput [matDatepicker]="picker">
@@ -62,8 +54,7 @@
       </mat-form-field>
   
     <div class="buttons">
-        <!-- Botón de Registro -->
-        <button mat-raised-button class="custom-button" (click)="register()">Sing Up</button>
+        <button mat-raised-button class="custom-button" (click)="register()">Sign Up</button>
     </div>    
     </mat-card>
 </div>

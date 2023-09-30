@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
+import { Router } from '@angular/router';
+import { TouristService } from 'src/app/tourist/services/tourist.service';
+import { Tourist } from 'src/app/tourist/models/tourist';
 
 export class MyErrorStateMatcher implements ErrorStateMatcher {
   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
@@ -16,6 +19,10 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
 })
 
 export class CardLoginComponent {
+
+  constructor(private router: Router, private touristService: TouristService) { }
+  
+
   emailFormControl = new FormControl('', [
     Validators.required,
     Validators.email,
@@ -25,24 +32,38 @@ export class CardLoginComponent {
     Validators.required,
   ]);
 
-  hidePassword = true; // Variable para ocultar/mostrar contraseña
+  hidePassword = true; 
   matcher = new MyErrorStateMatcher();
 
-  // Métodos para las acciones de los botones
   login() {
-    // Agregar lógica de inicio de sesión aquí
+    const email = this.emailFormControl.value as string;
+    const password = this.passwordFormControl.value as string;
+  
+    this.touristService.validateUser(email, password).subscribe(
+      (user: Tourist | null) => {
+        if (user !== null) {
+          window.localStorage.setItem('currentUserId', user.id);
+          window.localStorage.setItem('userWithChatting', "201");
+          this.router.navigate(['/home']);
+        } else {
+          console.log('Usuario no válido');
+        }
+      },
+      (error) => {
+        console.error('Error al validar usuario', error);
+      }
+    );
   }
+  
 
   createAccount() {
-    // Agregar lógica para crear una nueva cuenta aquí
+    this.router.navigate(['/register']);
   }
 
   loginWithGoogle() {
-    // Agregar lógica para iniciar sesión con Google aquí
   }
 
   loginWithFacebook() {
-    // Agregar lógica para iniciar sesión con Facebook aquí
   }
 
   togglePasswordVisibility() {

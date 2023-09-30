@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms'; // Cambio aquí
+import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
-
+import { Router } from '@angular/router';
 
 export class MyErrorStateMatcher implements ErrorStateMatcher {
   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
@@ -16,6 +16,7 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
   styleUrls: ['./card-register.component.css']
 })
 export class CardRegisterComponent {
+  constructor(private router: Router) { }
   emailFormControl = new FormControl('', [
     Validators.required,
     Validators.email,
@@ -30,18 +31,17 @@ export class CardRegisterComponent {
     Validators.required,
   ]);
 
-  hidePassword = true; // Variable para ocultar/mostrar contraseña
+  hidePassword = true;
   matcher = new MyErrorStateMatcher();
   
   register() {
-    // Agregar lógica de registro aquí
+    this.router.navigate(['/preferences']);
   }
   
   togglePasswordVisibility() {
     this.hidePassword = !this.hidePassword;
   }
   createAccount() {
-    // Agregar lógica para crear una nueva cuenta aquí
   }
   login(){
     
