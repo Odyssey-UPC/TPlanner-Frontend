@@ -13,6 +13,9 @@ import {MatCardModule} from '@angular/material/card';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
     imports: [
@@ -29,7 +32,10 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
         MatCardModule,
         MatDatepickerModule,
         MatNativeDateModule,
-        MatCheckboxModule
+        MatCheckboxModule,
+        MatButtonToggleModule,
+        MatTabsModule,
+        MatDialogModule
     ],
     exports: [
         MatIconModule,
@@ -45,7 +51,10 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
         MatCardModule,
         MatDatepickerModule,
         MatNativeDateModule,
-        MatCheckboxModule
+        MatCheckboxModule,
+        MatButtonToggleModule,
+        MatTabsModule,
+        MatDialogModule
     ],
 })
 export class MaterialModule { }

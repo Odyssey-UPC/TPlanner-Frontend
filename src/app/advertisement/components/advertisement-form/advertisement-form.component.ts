@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
-import { TuristService } from 'src/app/turist-service/models/turist-service';
-import { TuristServiceService } from 'src/app/turist-service/services/turist-service.service';
+import { TouristService } from 'src/app/tourist-service/models/tourist-service';
+import { TouristServiceService } from 'src/app/tourist-service/services/tourist-service.service';
 import { AdvertisementService } from '../../services/advertisement.service';
 import { catchError, throwError } from 'rxjs';
 
@@ -13,13 +13,13 @@ import { catchError, throwError } from 'rxjs';
 export class AdvertisementFormComponent {
 
 
-  constructor(private turistServiceService: TuristServiceService, private advertisementService: AdvertisementService){}
+  constructor(private touristServiceService: TouristServiceService, private advertisementService: AdvertisementService){}
 
   adName!: string
   adAmount!: string
   adImage!: string
   adTuristService!: string;
-  turistServices!: TuristService[] 
+  turistServices!: TouristService[] 
 
   nameControl = new FormControl('', [Validators.required, Validators.maxLength(15)]);
   amountControl = new FormControl('', [Validators.required, Validators.min(100)]);
@@ -31,7 +31,7 @@ export class AdvertisementFormComponent {
   }
 
   getAllTuristServicesByTuristProviderId(id: number){
-    this.turistServiceService.getTuristServiceByTouristProviderId(id).subscribe((response: any) => {
+    this.touristServiceService.getTouristServiceByTouristProviderId(id).subscribe((response: any) => {
       this.turistServices = response.body
     })
   }

@@ -5,6 +5,9 @@ import { AdvertisementSectionComponent } from './advertisement/components/advert
 import { LoginComponent } from './login/components/login/login.component';
 import { RegisterComponent } from './register/components/register/register.component';
 import { PreferencesComponent } from './preference/components/preferences/preferences.component';
+import { HomeSectionComponent } from './home/components/home-section/home-section.component';
+import { FaqComponent } from './Frequently-Asked-Questions/components/faq/FaqComponent';
+import { QuestionFormComponent } from './Frequently-Asked-Questions/components/question-form/question-form.component';
 
 const routes: Routes = [
   {path: "preferences", component:PreferencesComponent},
@@ -12,8 +15,10 @@ const routes: Routes = [
   {path: "login", component:LoginComponent},
   {path: "chat", component: ChatSectionComponent},
   {path: "advertisement", component: AdvertisementSectionComponent},
-  {path: "", redirectTo: "preferences", pathMatch: "full"},
-  {path: "**", redirectTo: "preferences", pathMatch: "full"}
+  {path: "home", component: HomeSectionComponent},
+  {path: "", redirectTo: "home", pathMatch: "full"},
+  {path: "question-form", component: QuestionFormComponent },
+  {path: "faq", component:FaqComponent},
 ];
 
 @NgModule({

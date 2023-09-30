@@ -1,0 +1,23 @@
+.main-home-container{
+    display: flex;
+    flex-direction: column;
+}
+
+app-seeker-home{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+@media (max-width: 480px){
+    app-header-home{
+        width: 100%;
+    }
+    app-filter-home{
+        width: 100%;
+    }
+    app-seeker-home{
+        width: 100%;
+    }
+}
+

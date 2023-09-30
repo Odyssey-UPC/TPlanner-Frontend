@@ -23,6 +23,14 @@ import { CardRegisterComponent } from './register/components/card-register/card-
 import { RegisterComponent } from './register/components/register/register.component';
 import { CardPreferenceComponent } from './preference/components/card-preference/card-preference.component';
 import { PreferencesComponent } from './preference/components/preferences/preferences.component';
+import { HeaderHomeComponent } from './home/components/header-home/header-home.component';
+import { SeekerHomeComponent } from './home/components/seeker-home/seeker-home.component';
+import { FilterHomeComponent } from './home/components/filter-home/filter-home.component';
+import { HomeSectionComponent } from './home/components/home-section/home-section.component';
+import { FaqComponent } from './Frequently-Asked-Questions/components/faq/FaqComponent';
+import { QuestionFormComponent } from './Frequently-Asked-Questions/components/question-form/question-form.component';
+import {NavbarComponent} from './navbar/components/navbar/navbar.component';  
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,14 +50,21 @@ import { PreferencesComponent } from './preference/components/preferences/prefer
     CardRegisterComponent,
     RegisterComponent,
     CardPreferenceComponent,
-    PreferencesComponent
+    PreferencesComponent,
+    HeaderHomeComponent,
+    SeekerHomeComponent,
+    FilterHomeComponent,
+    HomeSectionComponent,
+    FaqComponent,
+    QuestionFormComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
