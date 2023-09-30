@@ -1,0 +1,73 @@
+
+.create-account-card {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px; /* Agregamos un borde redondeado */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); /* Agregamos una sombra */
+}
+/* Estilo para los campos de "Email", "Password" y "Confirm Password" */
+.input-email,
+.input-password,
+.input-confirm-password {
+    margin-bottom: 16px; 
+}
+
+.input-name {
+    display: flex;
+    justify-content:space-around;
+}
+  
+.input-field {
+    width: 50%; /* Esto dividirá el ancho en dos columnas */
+}
+  
+.input-first-name,
+.input-last-name {
+    width: 100%;
+}
+
+.create-account-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.create-account-card {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.input-name {
+  display: flex;
+  gap: 20px; /* Espacio entre First Name y Last Name */
+}
+
+.input-field {
+  flex: 1; /* Los campos se expandirán para llenar el espacio disponible */
+}
+
+.input-birthday {
+  display: flex;
+  gap: 10px; /* Espacio entre los campos de fecha de nacimiento */
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.custom-button {
+    margin-top: 20px;
+    background-color: #F95738E5 !important; /* Cambiamos el color a #F95738E5 */
+    color: #fff !important;
+    border-radius: 20px;
+  }

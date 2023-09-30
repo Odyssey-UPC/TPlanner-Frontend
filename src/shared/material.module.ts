@@ -9,6 +9,10 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
+import {MatCardModule} from '@angular/material/card';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatDialogModule} from '@angular/material/dialog';
@@ -25,6 +29,10 @@ import {MatDialogModule} from '@angular/material/dialog';
         MatSelectModule,
         MatDividerModule,
         MatListModule,
+        MatCardModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
+        MatCheckboxModule,
         MatButtonToggleModule,
         MatTabsModule,
         MatDialogModule
@@ -40,6 +48,10 @@ import {MatDialogModule} from '@angular/material/dialog';
         MatSelectModule,
         MatDividerModule,
         MatListModule,
+        MatCardModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
+        MatCheckboxModule,
         MatButtonToggleModule,
         MatTabsModule,
         MatDialogModule

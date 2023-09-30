@@ -16,6 +16,13 @@ import { AdvertisementSectionComponent } from './advertisement/components/advert
 import { AdvertisementFormComponent } from './advertisement/components/advertisement-form/advertisement-form.component';
 import { AdvertisementInfoComponent } from './advertisement/components/advertisement-info/advertisement-info.component';
 import { AdvertisementDividerComponent } from './advertisement/components/advertisement-divider/advertisement-divider.component';
+import { CardLoginComponent } from './login/components/card-login/card-login.component';
+import { LogoComponent } from './login/components/logo/logo.component';
+import { LoginComponent } from './login/components/login/login.component';
+import { CardRegisterComponent } from './register/components/card-register/card-register.component';
+import { RegisterComponent } from './register/components/register/register.component';
+import { CardPreferenceComponent } from './preference/components/card-preference/card-preference.component';
+import { PreferencesComponent } from './preference/components/preferences/preferences.component';
 import { HeaderHomeComponent } from './home/components/header-home/header-home.component';
 import { SeekerHomeComponent } from './home/components/seeker-home/seeker-home.component';
 import { FilterHomeComponent } from './home/components/filter-home/filter-home.component';
@@ -37,6 +44,13 @@ import {NavbarComponent} from './navbar/components/navbar/navbar.component';
     AdvertisementFormComponent,
     AdvertisementInfoComponent,
     AdvertisementDividerComponent,
+    CardLoginComponent,
+    LogoComponent,
+    LoginComponent,
+    CardRegisterComponent,
+    RegisterComponent,
+    CardPreferenceComponent,
+    PreferencesComponent,
     HeaderHomeComponent,
     SeekerHomeComponent,
     FilterHomeComponent,
