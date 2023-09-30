@@ -16,17 +16,13 @@ import { AdvertisementSectionComponent } from './advertisement/components/advert
 import { AdvertisementFormComponent } from './advertisement/components/advertisement-form/advertisement-form.component';
 import { AdvertisementInfoComponent } from './advertisement/components/advertisement-info/advertisement-info.component';
 import { AdvertisementDividerComponent } from './advertisement/components/advertisement-divider/advertisement-divider.component';
-
 import { HeaderHomeComponent } from './home/components/header-home/header-home.component';
 import { SeekerHomeComponent } from './home/components/seeker-home/seeker-home.component';
 import { FilterHomeComponent } from './home/components/filter-home/filter-home.component';
 import { HomeSectionComponent } from './home/components/home-section/home-section.component';
-
-import { FormsModule } from '@angular/forms';
 import { FaqComponent } from './Frequently-Asked-Questions/components/faq/FaqComponent';
 import { QuestionFormComponent } from './Frequently-Asked-Questions/components/question-form/question-form.component';
-import { MatDialogModule } from '@angular/material/dialog';
-
+import {NavbarComponent} from './navbar/components/navbar/navbar.component';  
 
 @NgModule({
   declarations: [
@@ -44,18 +40,17 @@ import { MatDialogModule } from '@angular/material/dialog';
     HeaderHomeComponent,
     SeekerHomeComponent,
     FilterHomeComponent,
-    HomeSectionComponent
+    HomeSectionComponent,
     FaqComponent,
     QuestionFormComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule,
-    FormsModule,
-    MatDialogModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

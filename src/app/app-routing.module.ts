@@ -11,7 +11,7 @@ const routes: Routes = [
   {path: "chat", component: ChatSectionComponent},
   {path: "advertisement", component: AdvertisementSectionComponent},
   {path: "home", component: HomeSectionComponent},
-  {path: "", redirectTo: "chat", pathMatch: "full"},
+  {path: "", redirectTo: "home", pathMatch: "full"},
   {path: "question-form", component: QuestionFormComponent },
   {path: "faq", component:FaqComponent},
 ];

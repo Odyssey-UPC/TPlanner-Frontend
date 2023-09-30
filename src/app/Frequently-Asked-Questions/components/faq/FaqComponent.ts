@@ -19,7 +19,7 @@ export class FaqComponent {
 
     { question: "What happens if I cancel my reservation?", answer: "<br>If you cancel your reservation, please refer to our cancellation policy. Depending on the timing of the cancellation, there may be a refund or a cancellation fee. Be sure to review the terms and conditions associated with your reservation.<br> <br>" },
 
-    { question: "What happens if a customer causes any damage to my business?", answer: "<br>n the event that a customer causes damage to your business, we recommend documenting the incident and contacting our support team. Depending on the situation, we may assist in resolving the issue, and our dispute resolution process will be initiated to determine a fair resolution for both parties involved.<br> <br>" },
+    { question: "What happens if a customer causes any damage to my business?", answer: "<br>In the event that a customer causes damage to your business, we recommend documenting the incident and contacting our support team. Depending on the situation, we may assist in resolving the issue, and our dispute resolution process will be initiated to determine a fair resolution for both parties involved.<br> <br>" },
   ];
   dialog: any;
 
