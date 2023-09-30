@@ -16,6 +16,13 @@ import { AdvertisementSectionComponent } from './advertisement/components/advert
 import { AdvertisementFormComponent } from './advertisement/components/advertisement-form/advertisement-form.component';
 import { AdvertisementInfoComponent } from './advertisement/components/advertisement-info/advertisement-info.component';
 import { AdvertisementDividerComponent } from './advertisement/components/advertisement-divider/advertisement-divider.component';
+import { CardLoginComponent } from './login/components/card-login/card-login.component';
+import { LogoComponent } from './login/components/logo/logo.component';
+import { LoginComponent } from './login/components/login/login.component';
+import { CardRegisterComponent } from './register/components/card-register/card-register.component';
+import { RegisterComponent } from './register/components/register/register.component';
+import { CardPreferenceComponent } from './preference/components/card-preference/card-preference.component';
+import { PreferencesComponent } from './preference/components/preferences/preferences.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +35,14 @@ import { AdvertisementDividerComponent } from './advertisement/components/advert
     AdvertisementSectionComponent,
     AdvertisementFormComponent,
     AdvertisementInfoComponent,
-    AdvertisementDividerComponent
+    AdvertisementDividerComponent,
+    CardLoginComponent,
+    LogoComponent,
+    LoginComponent,
+    CardRegisterComponent,
+    RegisterComponent,
+    CardPreferenceComponent,
+    PreferencesComponent
   ],
   imports: [
     BrowserModule,
