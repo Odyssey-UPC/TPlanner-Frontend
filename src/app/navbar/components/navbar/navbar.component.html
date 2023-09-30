@@ -1,0 +1,20 @@
+<div class="navigation-bar">
+  <button mat-icon-button class="nav-button" [class.active]="activeTab === 'home'" (click)="navigateTo('home')">
+      <mat-icon [style.color]="activeTab === 'home' ? 'blue' : ''">home</mat-icon>
+  </button>
+  <button mat-icon-button class="nav-button" [class.active]="activeTab === 'chat'" (click)="navigateTo('chat')">
+      <mat-icon [style.color]="activeTab === 'chat' ? 'blue' : ''">chat</mat-icon>
+  </button>
+  <button mat-icon-button class="nav-button" [class.active]="activeTab === 'create'" (click)="navigateTo('create')">
+      <mat-icon [style.color]="activeTab === 'create' ? 'blue' : ''">add_circle</mat-icon>
+  </button>
+  <button mat-icon-button class="nav-button" [class.active]="activeTab === 'calendar'" (click)="navigateTo('calendar')">
+      <mat-icon [style.color]="activeTab === 'calendar' ? 'blue' : ''">calendar_today</mat-icon>
+  </button>
+  <button mat-icon-button class="nav-button" [class.active]="activeTab === 'profile'" (click)="navigateTo('profile')">
+      <mat-icon [style.color]="activeTab === 'profile' ? 'blue' : ''">person</mat-icon>
+  </button>
+  <button mat-icon-button class="nav-button" [class.active]="activeTab === 'faq'" (click)="navigateTo('faq')">
+    <mat-icon [style.color]="activeTab === 'faq' ? 'blue' : ''">help</mat-icon>
+  </button>
+</div>
