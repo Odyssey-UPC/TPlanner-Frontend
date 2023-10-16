@@ -8,6 +8,7 @@ import { PreferencesComponent } from './preference/components/preferences/prefer
 import { HomeSectionComponent } from './home/components/home-section/home-section.component';
 import { FaqComponent } from './Frequently-Asked-Questions/components/faq/FaqComponent';
 import { QuestionFormComponent } from './Frequently-Asked-Questions/components/question-form/question-form.component';
+import { DetailsComponent } from './tourist-service/pages/details/details.component';
 
 const routes: Routes = [
   {path: "preferences", component:PreferencesComponent},
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path: "", redirectTo: "login", pathMatch: "full"},
   {path: "question-form", component: QuestionFormComponent },
   {path: "faq", component:FaqComponent},
+  {path: "tourist-service/details/:id", component: DetailsComponent}
 ];
 
 @NgModule({

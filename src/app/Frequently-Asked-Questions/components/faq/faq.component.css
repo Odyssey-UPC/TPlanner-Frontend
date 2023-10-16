@@ -5,7 +5,7 @@
 }
 
 .container {
-    width: 90%;
+    width: 50%;
     margin: 100px auto;
     padding-bottom: 200px;
 }
@@ -20,6 +20,12 @@
     font-size: 2rem;
     margin-bottom: 30px;
 }
+
+
+.container-faq .title-faq h1 {
+    line-height: 1.5;
+}
+
 
 .container-faq .item-faq {
     box-shadow: 0 0 15px -1px rgba(0,0,0,.2);
@@ -108,5 +114,16 @@
     bottom: 10px; 
     left: 50%;
     transform: translateX(-50%); 
-  }
-  
+}
+
+@media (max-width: 1279px) {
+    .container{
+        min-width: 600px;
+    }
+}
+
+@media (max-width: 769px) {
+    .container{
+        min-width: 90%;
+    }
+}

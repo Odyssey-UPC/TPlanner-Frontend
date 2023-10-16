@@ -1,0 +1,15 @@
+<div class="carrusel-container">
+    <div class="carrusel">
+        <div class="slide" *ngFor="let slide of slides; let i = index" [style.display]="i === slideIndex ? 'block' : 'none'">
+          <img [src]="slide" alt="Slide {{i + 1}}">
+        </div>
+    
+        <a class="prev" (click)="plusSlides(-1)"><mat-icon>arrow_back_ios</mat-icon></a>
+        <a class="next" (click)="plusSlides(1)"><mat-icon>arrow_forward_ios</mat-icon></a>
+    </div>
+      
+    <div class="dots">
+        <span class="dot" *ngFor="let slide of slides; let i = index" [class.active]="i === slideIndex" (click)="showSlide(i)"></span>
+    </div>    
+</div>
+
