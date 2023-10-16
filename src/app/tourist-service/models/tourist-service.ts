@@ -11,5 +11,6 @@ export interface TouristService {
     tourist_provider_id: any;
     thumbnails: any;
     main_thumbnail: any;
+    content: any;
 }
   

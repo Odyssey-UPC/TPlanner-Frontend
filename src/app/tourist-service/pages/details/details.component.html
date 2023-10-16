@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<div class="details-container">
+
+    <div class ="toolbar-container">
+
+        <button mat-icon-button class="example-icon" (click)="goBack()">
+            <mat-icon class="icon-display">arrow_back</mat-icon>
+        </button>
+      
+        <h1>Room Choice</h1>
+      
+    </div>
+
+    <app-carousel [slides]="thumbnails"></app-carousel>
+
+    <h2>{{touristService.service_name}}</h2>
+
+    <div class="short-content-container">
+
+        <div class="short-content-item">
+            <p class="subtitle">Rating:</p>
+            <p class="subtitle-content">⭐4.5</p>
+        </div>
+
+        <div class="short-content-item">
+            <p class="subtitle">Price:</p>
+            <p class="subtitle-content">{{touristService.price | currency: 'USD'}}</p>
+        </div>
+
+        <div class="short-content-item">
+            <p class="subtitle">Slots:</p>
+            <p class="subtitle-content">{{touristService.capacity}}</p>
+        </div>
+
+        <div class="short-content-item">
+            <p class="subtitle">Start time:</p>
+            <p class="subtitle-content">{{touristService.service_date}}</p>
+        </div>
+
+        <div class="short-content-item"> 
+            <p class="subtitle">End time:</p>
+            <p class="subtitle-content">{{touristService.service_deadline}}</p>
+        </div>
+    </div>
+    
+    <div class="buttons-container">
+
+        <button mat-button class="custom-button contact-button">
+            <mat-icon class="custom-icon">forum</mat-icon>
+            Contact business
+        </button>
+
+        <button mat-button class="custom-button location-button">
+            <mat-icon class="custom-icon">location_on</mat-icon>
+            View location
+        </button>
+
+    </div>
+
+    <div class="content-container" [innerHTML]="givenContent"></div>
+    
+    <button mat-button class="custom-button">
+        <mat-icon>touch_app</mat-icon>
+        Choose
+    </button>
+
+</div>
+
