@@ -29,7 +29,8 @@ import { FilterHomeComponent } from './home/components/filter-home/filter-home.c
 import { HomeSectionComponent } from './home/components/home-section/home-section.component';
 import { FaqComponent } from './Frequently-Asked-Questions/components/faq/FaqComponent';
 import { QuestionFormComponent } from './Frequently-Asked-Questions/components/question-form/question-form.component';
-import {NavbarComponent} from './navbar/components/navbar/navbar.component';  
+import { NavbarComponent } from './navbar/components/navbar/navbar.component';
+import { NotificationComponent } from './notification/components/notification/notification.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import {NavbarComponent} from './navbar/components/navbar/navbar.component';
     HomeSectionComponent,
     FaqComponent,
     QuestionFormComponent,
-    NavbarComponent
+    NavbarComponent,
+    NotificationComponent
   ],
   imports: [
     BrowserModule,

@@ -8,7 +8,8 @@
 .search-field {
   background-color: transparent;
   border-radius: 50px;
-  width: 80%;
+  width: 65%;
+  margin-right: 10px;
 }
 
 .search-input {
@@ -20,5 +21,30 @@
 .search-icon {
   color: #2196F3;
   font-size: 24px;
+}
+
+.notification-button-container {
+  margin-left: 1px;
   margin-right: 10px;
+}
+
+.notification-button {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.notification-button:hover mat-icon {
+  color: #2196F3;
+}
+
+.notification-button mat-icon {
+  color: inherit;
+  font-size: 20px; 
 }
