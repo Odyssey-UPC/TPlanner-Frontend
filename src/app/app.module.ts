@@ -31,6 +31,9 @@ import { FaqComponent } from './Frequently-Asked-Questions/components/faq/FaqCom
 import { QuestionFormComponent } from './Frequently-Asked-Questions/components/question-form/question-form.component';
 import { NavbarComponent } from './navbar/components/navbar/navbar.component';
 import { NotificationComponent } from './notification/components/notification/notification.component';
+import { DetailsComponent } from './tourist-service/pages/details/details.component';
+import { CarouselComponent } from './tourist-service/components/carousel/carousel.component';
+import { QuillModule } from 'ngx-quill';
 
 @NgModule({
   declarations: [
@@ -60,13 +63,16 @@ import { NotificationComponent } from './notification/components/notification/no
     QuestionFormComponent,
     NavbarComponent,
     NotificationComponent
+    DetailsComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    QuillModule
   ],
   providers: [],
   bootstrap: [AppComponent]

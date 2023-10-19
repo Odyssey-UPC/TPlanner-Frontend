@@ -15,7 +15,11 @@ export class TouristServiceService {
 
   getAllTouristServices() {
     return this.http.get<TouristService>(`${this.baseUrl}/tourist_service`, { observe: 'response' });
-  } 
+  }
+
+  getToursitServiceById(id: number){
+    return this.http.get<TouristService>(`${this.baseUrl}/tourist_service/${id}`, { observe: 'response' })
+  }
 
   getTouristServiceByTouristProviderId(id: number){
     return this.http.get<TouristService>(`${this.baseUrl}/tourist_service?tourist_provider_id=${id}`, { observe: 'response' })
