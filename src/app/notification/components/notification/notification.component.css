@@ -1,0 +1,43 @@
+.notification-header {
+  background-color: #ff511d;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.notification-container {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.notification {
+  font-weight: normal;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  width: 300px;
+  font-size: 16px;
+}
+
+.notification:hover {
+  background-color: #f5f5f5;
+  color: black;
+}
+
+.notification-description {
+  width: 300px;
+  font-size: 14px;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.notification-title {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
