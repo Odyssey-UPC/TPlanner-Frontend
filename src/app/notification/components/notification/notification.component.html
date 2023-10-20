@@ -1,0 +1,12 @@
+<div class="notification-header">Notificaciones</div>
+<div class="notification-container">
+  <div *ngFor="let notification of notifications" [ngClass]="{'notification': selectedNotification !== notification, 'notification-description': selectedNotification === notification}" (click)="onNotificationClick(notification)">
+    <div *ngIf="selectedNotification === notification">
+      <h3 class="notification-title">{{ notification.text }}</h3>
+      <p>{{ notification.description }}</p>
+    </div>
+    <div *ngIf="selectedNotification !== notification">
+      <p class="notification-title">{{ notification.text }}</p>
+    </div>
+  </div>
+</div>

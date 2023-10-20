@@ -33,6 +33,7 @@ import {NavbarComponent} from './navbar/components/navbar/navbar.component';
 import { DetailsComponent } from './tourist-service/pages/details/details.component';
 import { CarouselComponent } from './tourist-service/components/carousel/carousel.component';
 import { QuillModule } from 'ngx-quill';
+import { NotificationComponent } from './notification/components/notification/notification.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { QuillModule } from 'ngx-quill';
     QuestionFormComponent,
     NavbarComponent,
     DetailsComponent,
-    CarouselComponent
+    CarouselComponent,
+    NotificationComponent
   ],
   imports: [
     BrowserModule,
