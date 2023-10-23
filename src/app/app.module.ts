@@ -29,7 +29,9 @@ import { FilterHomeComponent } from './home/components/filter-home/filter-home.c
 import { HomeSectionComponent } from './home/components/home-section/home-section.component';
 import { FaqComponent } from './Frequently-Asked-Questions/components/faq/FaqComponent';
 import { QuestionFormComponent } from './Frequently-Asked-Questions/components/question-form/question-form.component';
-import {NavbarComponent} from './navbar/components/navbar/navbar.component';  
+import {NavbarComponent} from './navbar/components/navbar/navbar.component';
+import { ReviewFormComponent } from './review-form/review-form.component';  
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -57,14 +59,18 @@ import {NavbarComponent} from './navbar/components/navbar/navbar.component';
     HomeSectionComponent,
     FaqComponent,
     QuestionFormComponent,
-    NavbarComponent
+    NavbarComponent,
+    ReviewFormComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

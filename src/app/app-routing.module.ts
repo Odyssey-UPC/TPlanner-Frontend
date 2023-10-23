@@ -8,7 +8,7 @@ import { PreferencesComponent } from './preference/components/preferences/prefer
 import { HomeSectionComponent } from './home/components/home-section/home-section.component';
 import { FaqComponent } from './Frequently-Asked-Questions/components/faq/FaqComponent';
 import { QuestionFormComponent } from './Frequently-Asked-Questions/components/question-form/question-form.component';
-
+import { ReviewFormComponent } from './review-form/review-form.component';
 const routes: Routes = [
   {path: "preferences", component:PreferencesComponent},
   {path: "register", component:RegisterComponent},
@@ -16,7 +16,8 @@ const routes: Routes = [
   {path: "chat", component: ChatSectionComponent},
   {path: "advertisement", component: AdvertisementSectionComponent},
   {path: "home", component: HomeSectionComponent},
-  {path: "", redirectTo: "login", pathMatch: "full"},
+  {path: "reviewForm", component: ReviewFormComponent},
+  {path: "", redirectTo: "reviewForm", pathMatch: "full"},
   {path: "question-form", component: QuestionFormComponent },
   {path: "faq", component:FaqComponent},
 ];

@@ -1,4 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Importar el estilo de Bootstrap */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css');
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~boxicons/css/boxicons.min.css';
+
+/* Estilos globales para el cuerpo y el HTML */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
