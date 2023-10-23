@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ChatSectionComponent } from './chatting/components/chat-section/chat-section.component';
-import { AdvertisementSectionComponent } from './advertisement/components/advertisement-section/advertisement-section.component';
-import { LoginComponent } from './login/components/login/login.component';
-import { RegisterComponent } from './register/components/register/register.component';
+import { ChatSectionComponent } from './chatting/pages/chat-section/chat-section.component';
+import { AdvertisementSectionComponent } from './advertisement/pages/advertisement-section/advertisement-section.component';
+import { LoginComponent } from './login/pages/login/login.component';
+import { RegisterComponent } from './register/pages/register/register.component';
 import { PreferencesComponent } from './preference/components/preferences/preferences.component';
-import { HomeSectionComponent } from './home/components/home-section/home-section.component';
+import { HomeSectionComponent } from './home/pages/home-section/home-section.component';
 import { FaqComponent } from './Frequently-Asked-Questions/components/faq/FaqComponent';
-import { QuestionFormComponent } from './Frequently-Asked-Questions/components/question-form/question-form.component';
+import { QuestionFormComponent } from './Frequently-Asked-Questions/pages/question-form/question-form.component';
 import { DetailsComponent } from './tourist-service/pages/details/details.component';
 
 const routes: Routes = [

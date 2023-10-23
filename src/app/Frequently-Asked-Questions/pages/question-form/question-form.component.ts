@@ -1,7 +1,7 @@
 
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { FaqComponent } from '../faq/FaqComponent';
+import { FaqComponent } from '../../components/faq/FaqComponent';
 
 @Component({
   selector: 'app-question-form',
