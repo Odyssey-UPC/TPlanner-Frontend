@@ -9,6 +9,8 @@ import { HomeSectionComponent } from './home/components/home-section/home-sectio
 import { FaqComponent } from './Frequently-Asked-Questions/components/faq/FaqComponent';
 import { QuestionFormComponent } from './Frequently-Asked-Questions/components/question-form/question-form.component';
 import { ReviewFormComponent } from './review-form/review-form.component';
+import { ShareModalComponent } from './share-modal/share-modal.component';
+
 const routes: Routes = [
   {path: "preferences", component:PreferencesComponent},
   {path: "register", component:RegisterComponent},
@@ -17,9 +19,10 @@ const routes: Routes = [
   {path: "advertisement", component: AdvertisementSectionComponent},
   {path: "home", component: HomeSectionComponent},
   {path: "reviewForm", component: ReviewFormComponent},
-  {path: "", redirectTo: "reviewForm", pathMatch: "full"},
+  {path: "", redirectTo: "shareModel", pathMatch: "full"},
   {path: "question-form", component: QuestionFormComponent },
   {path: "faq", component:FaqComponent},
+  {path: "shareModel", component:ShareModalComponent},
 ];
 
 @NgModule({

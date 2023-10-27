@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, importProvidersFrom } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -32,6 +32,8 @@ import { QuestionFormComponent } from './Frequently-Asked-Questions/components/q
 import {NavbarComponent} from './navbar/components/navbar/navbar.component';
 import { ReviewFormComponent } from './review-form/review-form.component';  
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ShareModalComponent } from './share-modal/share-modal.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -61,6 +63,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     QuestionFormComponent,
     NavbarComponent,
     ReviewFormComponent,
+    ShareModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -71,6 +74,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

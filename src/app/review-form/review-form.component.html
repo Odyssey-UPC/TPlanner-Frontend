@@ -1,5 +1,5 @@
 <div class="wrapper">
-    <h3>Lorem ipsum dolor sit amet.</h3>
+    <h3>Evaluate Bussines</h3>
     <form (ngSubmit)="submitReview()">
         <div class="rating">
             <input type="number" name="rating" hidden [(ngModel)]="selectedRating">
@@ -7,11 +7,13 @@
               <i class="bx bx-star star" (click)="onStarClick(i)" [ngClass]="{'active': i <= selectedRating, 'painted': i <= selectedRating}"></i>
             </ng-container>
           </div>          
-      <textarea name="opinion" cols="30" rows="5" placeholder="Your opinion..." [(ngModel)]="opinion"></textarea>
+      <textarea name="opinion" cols="30" rows="5" placeholder="Into comment...." [(ngModel)]="opinion"></textarea>
       <div class="btn-group">
-        <button type="submit" class="btn submit">Submit</button>
+        <button type="submit" class="btn submit">Add </button>
         <button class="btn cancel" (click)="cancelReview()">Cancel</button>
       </div>
     </form>
   </div>
-  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
