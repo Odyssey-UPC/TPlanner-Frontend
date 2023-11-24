@@ -57,7 +57,7 @@ export class CardLoginComponent {
   
 
   createAccount() {
-    this.router.navigate(['/register']);
+    this.router.navigate(['/selected-profile']);
   }
 
   loginWithGoogle() {

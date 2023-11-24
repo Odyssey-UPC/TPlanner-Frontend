@@ -34,6 +34,8 @@ import { DetailsComponent } from './tourist-service/pages/details/details.compon
 import { CarouselComponent } from './tourist-service/components/carousel/carousel.component';
 import { QuillModule } from 'ngx-quill';
 import { NotificationComponent } from './notification/components/notification/notification.component';
+import { CardSelectedProfileComponent } from './profile/components/card-selected-profile/card-selected-profile.component';
+import { SectionSelectedProfileComponent } from './profile/components/section-selected-profile/section-selected-profile.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +66,9 @@ import { NotificationComponent } from './notification/components/notification/no
     NavbarComponent,
     DetailsComponent,
     CarouselComponent,
-    NotificationComponent
+    NotificationComponent,
+    CardSelectedProfileComponent,
+    SectionSelectedProfileComponent
   ],
   imports: [
     BrowserModule,

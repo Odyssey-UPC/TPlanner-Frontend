@@ -35,7 +35,7 @@ export class CardRegisterComponent {
   matcher = new MyErrorStateMatcher();
   
   register() {
-    this.router.navigate(['/preferences']);
+    this.router.navigate(['/home']);
   }
   
   togglePasswordVisibility() {

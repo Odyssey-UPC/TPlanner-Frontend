@@ -1,0 +1,13 @@
+<mat-card class="card-selected-profile">
+    <header>
+        <h1>{{ title }}</h1>
+    </header>
+    <body>
+        <p>{{ content }}</p>
+    </body>
+    <footer>
+        <a [routerLink]="redirectUrl">
+            <button mat-raised-button class="button-send-traveler">Confirm</button>
+        </a>
+    </footer>
+</mat-card>

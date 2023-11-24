@@ -9,8 +9,10 @@ import { HomeSectionComponent } from './home/pages/home-section/home-section.com
 import { FaqComponent } from './Frequently-Asked-Questions/components/faq/FaqComponent';
 import { QuestionFormComponent } from './Frequently-Asked-Questions/pages/question-form/question-form.component';
 import { DetailsComponent } from './tourist-service/pages/details/details.component';
+import { SectionSelectedProfileComponent } from './profile/components/section-selected-profile/section-selected-profile.component';
 
 const routes: Routes = [
+  {path: "selected-profile", component: SectionSelectedProfileComponent},
   {path: "preferences", component:PreferencesComponent},
   {path: "register", component:RegisterComponent},
   {path: "login", component:LoginComponent},

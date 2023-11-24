@@ -1,0 +1,17 @@
+.container-selection-profile {
+    background-image: url('https://cdn.discordapp.com/attachments/991473069942120498/1161446501197824030/RS_Background_1_1.png?ex=65385458&is=6525df58&hm=471a0e29f004efd3f2ca3395ebff4d105d339834b13b7c1c617bc3eb88f1ef3f&');
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: 0cqmin;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    flex-direction:row 
+}
+
+@media (max-width: 768px) {
+    .container-selection-profile {
+        flex-direction: column;
+    }
+}
