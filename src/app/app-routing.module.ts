@@ -10,8 +10,10 @@ import { FaqComponent } from './Frequently-Asked-Questions/components/faq/FaqCom
 import { QuestionFormComponent } from './Frequently-Asked-Questions/pages/question-form/question-form.component';
 import { DetailsComponent } from './tourist-service/pages/details/details.component';
 import { SectionSelectedProfileComponent } from './profile/components/section-selected-profile/section-selected-profile.component';
+import { RegisterServiceComponent } from './tourist-service/components/register-service/register-service.component';
 
 const routes: Routes = [
+  {path: "register-service", component: RegisterServiceComponent},
   {path: "selected-profile", component: SectionSelectedProfileComponent},
   {path: "preferences", component:PreferencesComponent},
   {path: "register", component:RegisterComponent},

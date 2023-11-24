@@ -1,0 +1,57 @@
+<div class="form-services">
+    <div class ="toolbar-container">
+
+        <button mat-icon-button class="example-icon" (click)="goBack()">
+            <mat-icon class="icon-display">arrow_back</mat-icon>
+        </button>
+      
+        <h1>Tourist Service Factory</h1>
+      
+    </div>
+
+    <form class="form" [formGroup]="serviceForm" (ngSubmit)="onSubmit()">
+
+        <header class="title">
+            <h2>
+                Create your service
+            </h2>
+        </header>
+        <mat-form-field appearance="outline">
+            <mat-label>Enter the name of your service</mat-label>
+            <input matInput placeholder="Name of your service" formControlName="service_name">
+        </mat-form-field>
+        
+        <mat-form-field appearance="outline">
+            <mat-label>Enter a date range</mat-label>
+            <mat-date-range-input [rangePicker]="picker">
+              <input matStartDate placeholder="Start date" formControlName="service_date">
+              <input matEndDate placeholder="End date" formControlName="service_deadline">
+            </mat-date-range-input>
+            <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-date-range-picker #picker></mat-date-range-picker>
+        </mat-form-field>
+
+        <mat-form-field floatLabel="always" appearance="outline">
+            <mat-label>Enter price of the service</mat-label>
+            <input matInput type="number" placeholder="00.0" formControlName="price">
+            <span matTextPrefix>S/.&nbsp;</span>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Enter capacity</mat-label>
+            <input matInput type="number" placeholder="Capacity" formControlName="capacity">
+        </mat-form-field>
+        <!-- <mat-form-field>
+            <textarea matInput placeholder="Content" formControlName="content"></textarea>
+        </mat-form-field> -->
+        <div class="input-description">
+            <mat-label>Enter about your service</mat-label>
+            <quill-editor class="description" [modules]="modulesQuill" (onEditorChanged)="onEditorChanged($event)"></quill-editor>
+        </div>
+        <div class="button-send-description">
+            <button mat-raised-button color="custom-button" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+    
