@@ -3,6 +3,7 @@ import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/fo
 import { ErrorStateMatcher } from '@angular/material/core';
 import { Router } from '@angular/router';
 
+
 export class MyErrorStateMatcher implements ErrorStateMatcher {
   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
     const isSubmitted = form && form.submitted;
@@ -10,13 +11,15 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
   }
 }
 
+
 @Component({
-  selector: 'app-card-register',
-  templateUrl: './card-register.component.html',
-  styleUrls: ['./card-register.component.css']
+  selector: 'app-register-tourist',
+  templateUrl: './register-tourist.component.html',
+  styleUrls: ['./register-tourist.component.css']
 })
-export class CardRegisterComponent {
+export class RegisterTouristComponent {
   nacionalidades: string[] = ['Argentina', 'Brasil', 'Chile', 'Colombia', 'Perú', 'Uruguay'];
+  generos: string[] = ['Masculino', 'Femenino', 'Cris', 'Otro'];
   constructor(private router: Router) { }
   emailFormControl = new FormControl('', [
     Validators.required,

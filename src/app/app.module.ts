@@ -19,8 +19,6 @@ import { AdvertisementDividerComponent } from './advertisement/components/advert
 import { CardLoginComponent } from './login/components/card-login/card-login.component';
 import { LogoComponent } from './login/components/logo/logo.component';
 import { LoginComponent } from './login/pages/login/login.component';
-import { CardRegisterComponent } from './register/components/card-register/card-register.component';
-import { RegisterComponent } from './register/pages/register/register.component';
 import { CardPreferenceComponent } from './preference/components/card-preference/card-preference.component';
 import { PreferencesComponent } from './preference/components/preferences/preferences.component';
 import { HeaderHomeComponent } from './home/components/header-home/header-home.component';
@@ -36,6 +34,8 @@ import { QuillModule } from 'ngx-quill';
 import { NotificationComponent } from './notification/components/notification/notification.component';
 import { CardSelectedProfileComponent } from './profile/components/card-selected-profile/card-selected-profile.component';
 import { SectionSelectedProfileComponent } from './profile/components/section-selected-profile/section-selected-profile.component';
+import { RegisterTouristProviderComponent } from './register/components/register-tourist-provider/register-tourist-provider.component';
+import { RegisterTouristComponent } from './register/components/register-tourist/register-tourist.component';
 
 @NgModule({
   declarations: [
@@ -53,8 +53,6 @@ import { SectionSelectedProfileComponent } from './profile/components/section-se
     CardLoginComponent,
     LogoComponent,
     LoginComponent,
-    CardRegisterComponent,
-    RegisterComponent,
     CardPreferenceComponent,
     PreferencesComponent,
     HeaderHomeComponent,
@@ -68,7 +66,9 @@ import { SectionSelectedProfileComponent } from './profile/components/section-se
     CarouselComponent,
     NotificationComponent,
     CardSelectedProfileComponent,
-    SectionSelectedProfileComponent
+    SectionSelectedProfileComponent,
+    RegisterTouristProviderComponent,
+    RegisterTouristComponent
   ],
   imports: [
     BrowserModule,
