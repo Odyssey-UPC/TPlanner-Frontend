@@ -16,6 +16,7 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
   styleUrls: ['./card-register.component.css']
 })
 export class CardRegisterComponent {
+  nacionalidades: string[] = ['Argentina', 'Brasil', 'Chile', 'Colombia', 'Perú', 'Uruguay'];
   constructor(private router: Router) { }
   emailFormControl = new FormControl('', [
     Validators.required,
