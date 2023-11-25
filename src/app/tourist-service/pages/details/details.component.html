@@ -11,9 +11,9 @@
       
     </div>
 
-    <app-carousel [slides]="thumbnails"></app-carousel>
+    <app-carousel [slides]="touristService.images"></app-carousel>
 
-    <h2>{{touristService.service_name}}</h2>
+    <h2>{{touristService.serviceName}}</h2>
 
     <div class="short-content-container">
 
@@ -34,12 +34,12 @@
 
         <div class="short-content-item">
             <p class="subtitle">Start time:</p>
-            <p class="subtitle-content">{{touristService.service_date}}</p>
+            <p class="subtitle-content">{{touristService.serviceDate[0]}}-{{touristService.serviceDate[1]}}-{{touristService.serviceDate[2]}}</p>
         </div>
 
         <div class="short-content-item"> 
             <p class="subtitle">End time:</p>
-            <p class="subtitle-content">{{touristService.service_deadline}}</p>
+            <p class="subtitle-content">{{touristService.serviceDeadline[0]}}-{{touristService.serviceDeadline[1]}}-{{touristService.serviceDeadline[2]}}</p>
         </div>
     </div>
     
