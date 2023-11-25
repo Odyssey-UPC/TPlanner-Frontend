@@ -37,7 +37,7 @@ export class RegisterTuristProviderComponent {
     confirmPassword: '',
     birthdate: '',
     email: '',
-    profileLink: 'https://cdn.discordapp.com/attachments/1037343952694685706/1177053147584282624/image.png?ex=65711b2a&is=655ea62a&hm=44271ac090056319599001c83bf273cf21cdbddb46943cbee77cc73a20182eb9&',
+    profileLink: 'https://cdn.discordapp.com/attachments/1037343952694685706/1177998128209743972/8PIK7n7pYrMEwAAAAASUVORK5CYII.png?ex=65748b3f&is=6562163f&hm=6f82a33abcafe9cccdb78320e3db11d6a2067691819ce1a6f4fbb771ce0c52bf&',
     organizationName: '',
     organizationDescription: 'Mi empresa se encagara de darte un gran servicio, somos lideres en el sector !!',
     websiteLink: 'https://www.javerianacali.edu.co/sites/default/files/styles/image_800x600/public/2022-04/Egresado-turismo-javeriana-cali_0.png.webp?itok=EkqWO9Rt',

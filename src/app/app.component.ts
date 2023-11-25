@@ -13,6 +13,6 @@ export class AppComponent {
 
   shouldShowNavbar(): boolean {
     const currentRoute = this.router.url;
-    return !['/login', '/register', '/preferences'].includes(currentRoute);
+    return !['/login', '/register', '/preferences', "/selected-profile", "/register-provider"].includes(currentRoute);
   }
 }
