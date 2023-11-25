@@ -4,6 +4,7 @@ import { ErrorStateMatcher } from '@angular/material/core';
 import { Router } from '@angular/router';
 import { LoginService } from '../../services/login.service';
 import { LoginRequest } from '../../models/login-request';
+import { UserService } from '../../services/user.service';
 
 export class MyErrorStateMatcher implements ErrorStateMatcher {
   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
@@ -24,7 +25,7 @@ export class CardLoginComponent {
   hidePassword = true; 
   matcher = new MyErrorStateMatcher();
 
-  constructor(private router: Router, private loginService: LoginService) { }
+  constructor(private router: Router, private loginService: LoginService, private userService: UserService) { }
 
   login() {
     var email = this.emailFormControl.value;
@@ -40,6 +41,19 @@ export class CardLoginComponent {
 
           if (token) {
             sessionStorage.setItem('token', token);
+
+            this.userService.getUserByUsername(email!).subscribe(
+              response => {
+                const userId = response;
+                if (userId) {
+                  sessionStorage.setItem('userId',userId);
+                }
+              },
+              error => {
+                console.error('Error al obtener el usuario:', error);
+              }
+            );
+
             this.router.navigate(['/home']);
           }
         },
