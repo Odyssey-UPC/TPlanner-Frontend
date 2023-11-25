@@ -38,6 +38,11 @@ import { CardSelectedProfileComponent } from './profile/components/card-selected
 import { SectionSelectedProfileComponent } from './profile/components/section-selected-profile/section-selected-profile.component';
 import { RegisterServiceComponent } from './tourist-service/components/register-service/register-service.component';
 import { ItineraryCatalogComponent } from './itinerary/components/itinerary-catalog/itinerary-catalog.component';
+import { RegisterTuristProviderComponent } from './register/components/register-turist-provider/register-turist-provider.component';
+import { RegisterProviderComponent } from './register/pages/register-provider/register-provider.component';
+import { FormsModule } from '@angular/forms';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatSelectModule } from '@angular/material/select';
 import { YourItinerariesComponent } from './itinerary/components/your-itineraries/your-itineraries.component';
 
 @NgModule({
@@ -74,6 +79,8 @@ import { YourItinerariesComponent } from './itinerary/components/your-itinerarie
     SectionSelectedProfileComponent,
     RegisterServiceComponent,
     ItineraryCatalogComponent,
+    RegisterTuristProviderComponent,
+    RegisterProviderComponent,
     YourItinerariesComponent
   ],
   imports: [
@@ -82,7 +89,10 @@ import { YourItinerariesComponent } from './itinerary/components/your-itinerarie
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
-    QuillModule
+    QuillModule,
+    FormsModule,
+    MatRadioModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
