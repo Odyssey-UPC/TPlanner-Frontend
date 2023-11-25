@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
 import { Router } from '@angular/router';
-import { TouristService } from 'src/app/tourist/services/tourist.service';
-import { Tourist } from 'src/app/tourist/models/tourist';
+import { LoginService } from '../../services/login.service';
+import { LoginRequest } from '../../models/login-request';
 
 export class MyErrorStateMatcher implements ErrorStateMatcher {
   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
@@ -17,44 +17,38 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
   templateUrl: './card-login.component.html',
   styleUrls: ['./card-login.component.css']
 })
-
 export class CardLoginComponent {
 
-  constructor(private router: Router, private touristService: TouristService) { }
-  
-
-  emailFormControl = new FormControl('', [
-    Validators.required,
-    Validators.email,
-  ]);
-
-  passwordFormControl = new FormControl('', [
-    Validators.required,
-  ]);
-
+  emailFormControl = new FormControl('', [Validators.required]);
+  passwordFormControl = new FormControl('', [Validators.required]);
   hidePassword = true; 
   matcher = new MyErrorStateMatcher();
 
+  constructor(private router: Router, private loginService: LoginService) { }
+
   login() {
-    const email = this.emailFormControl.value as string;
-    const password = this.passwordFormControl.value as string;
-  
-    this.touristService.validateUser(email, password).subscribe(
-      (user: Tourist | null) => {
-        if (user !== null) {
-          window.localStorage.setItem('currentUserId', user.id);
-          window.localStorage.setItem('userWithChatting', "201");
-          this.router.navigate(['/home']);
-        } else {
-          console.log('Usuario no válido');
+    var email = this.emailFormControl.value;
+    var password = this.passwordFormControl.value;
+
+    if (this.emailFormControl.valid && this.passwordFormControl.valid) {
+      const loginRequest: LoginRequest = { username: email, password: password } as LoginRequest;
+
+      this.loginService.login(loginRequest).subscribe(
+        response => {
+          const token = response.body.Token;
+          console.log(token);
+
+          if (token) {
+            sessionStorage.setItem('token', token);
+            this.router.navigate(['/home']);
+          }
+        },
+        error => {
+          console.error('Error durante el inicio de sesión:', error);
         }
-      },
-      (error) => {
-        console.error('Error al validar usuario', error);
-      }
-    );
+      );
+    }
   }
-  
 
   createAccount() {
     this.router.navigate(['/selected-profile']);
