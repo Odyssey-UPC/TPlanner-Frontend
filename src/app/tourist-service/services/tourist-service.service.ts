@@ -13,20 +13,27 @@ export class TouristServiceService {
 
   constructor(private http: HttpClient) { }
 
+
   getAllTouristServices() {
-    return this.http.get<TouristService>(`${this.baseUrl}/tourist_service`, { observe: 'response' });
+
+    const token = sessionStorage.getItem('token');
+    const headers = { 'Authorization': 'Bearer ' + token }
+
+    return this.http.get<TouristService>(`${this.baseUrl}/api/v1/touristServices`, { headers });
   }
 
   getToursitServiceById(id: number){
-    return this.http.get<TouristService>(`${this.baseUrl}/tourist_service/${id}`, { observe: 'response' })
+    const token = sessionStorage.getItem('token');
+    const headers = { 'Authorization': 'Bearer ' + token }
+    return this.http.get<TouristService>(`${this.baseUrl}/api/v1/touristServices/${id}`, { headers })
   }
 
   getTouristServiceByTouristProviderId(id: number){
-    return this.http.get<TouristService>(`${this.baseUrl}/tourist_service?tourist_provider_id=${id}`, { observe: 'response' })
+    return this.http.get<TouristService>(`${this.baseUrl}/api/v1/touristServices?tourist_provider_id=${id}`, { observe: 'response' })
   }
 
   getTouristServicesByCategory(categoryId: number): Observable<TouristService[]> {
-    return this.http.get<TouristService[]>(`${this.baseUrl}/tourist_service?service_category_id=${categoryId}`);
+    return this.http.get<TouristService[]>(`${this.baseUrl}/api/v1/touristServices?service_category_id=${categoryId}`);
   }
 
 }

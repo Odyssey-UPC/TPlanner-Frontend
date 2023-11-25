@@ -1,14 +1,19 @@
-<!-- <div class="itinerary-container">
+<div class="itinerary-container">
   <div *ngFor="let itinerary of itineraries" class="itinerary">
-    <h2>{{ itinerary.itineraryName }}</h2>
-    <p>{{ itinerary.itineraryDescription }}</p>
+    <div class="itinerary-card">
+      <h2>{{ itinerary.itineraryName }}</h2>
+      <p>{{ itinerary.itineraryDescription }}</p>
 
-    <div *ngFor="let service of itinerary.touristServicesIds" class="service">
-      <div class="service-info">
-        <p><strong>Date:</strong> {{ service.serviceDate | date: 'medium' }}</p>
-        <p><strong>Service:</strong> {{ service.serviceName }}</p>
+      <div *ngFor="let service of itinerary.tourist_services" class="service">
+        <div class="service-info">
+          <p><strong>Start Date:</strong> {{service.serviceDate[0]}}-{{service.serviceDate[1]}}-{{service.serviceDate[2]}}</p>
+          <p><strong>End Date:</strong> {{service.serviceDeadline[0]}}-{{service.serviceDeadline[1]}}-{{service.serviceDeadline[2]}}</p>
+          <p><strong>Service:</strong> {{ service.serviceName }}</p>
+        </div>
+        <img [src]="service.images[0]" alt="{{ service.serviceName }}" class="service-image">
       </div>
-      <img [src]="service.images[0]" alt="{{ service.serviceName }}" class="service-image">
+
+      <button class="subscribe-button" (click)="suscribeToItinerary(itinerary.id)">Subscribe</button>
     </div>
   </div>
-</div> -->
+</div>

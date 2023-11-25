@@ -12,6 +12,8 @@ import { DetailsComponent } from './tourist-service/pages/details/details.compon
 import { SectionSelectedProfileComponent } from './profile/components/section-selected-profile/section-selected-profile.component';
 import { RegisterServiceComponent } from './tourist-service/components/register-service/register-service.component';
 import { RegisterProviderComponent } from './register/pages/register-provider/register-provider.component';
+import { ItineraryCatalogComponent } from './itinerary/components/itinerary-catalog/itinerary-catalog.component';
+import { YourItinerariesComponent } from './itinerary/components/your-itineraries/your-itineraries.component';
 
 const routes: Routes = [
   {path: "register-provider", component: RegisterProviderComponent},
@@ -26,7 +28,10 @@ const routes: Routes = [
   {path: "", redirectTo: "login", pathMatch: "full"},
   {path: "question-form", component: QuestionFormComponent },
   {path: "faq", component:FaqComponent},
-  {path: "tourist-service/details/:id", component: DetailsComponent}
+  {path: "tourist-service/details/:id", component: DetailsComponent},
+  {path: "itinerary-catalog", component: ItineraryCatalogComponent},
+  {path: "your-itineraries", component: YourItinerariesComponent},
+  {path: "**", redirectTo: "login", pathMatch: "full"},
 ];
 
 @NgModule({

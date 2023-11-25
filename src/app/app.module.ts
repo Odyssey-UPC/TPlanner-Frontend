@@ -43,6 +43,7 @@ import { RegisterProviderComponent } from './register/pages/register-provider/re
 import { FormsModule } from '@angular/forms';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
+import { YourItinerariesComponent } from './itinerary/components/your-itineraries/your-itineraries.component';
 
 @NgModule({
   declarations: [
@@ -79,7 +80,8 @@ import { MatSelectModule } from '@angular/material/select';
     RegisterServiceComponent,
     ItineraryCatalogComponent,
     RegisterTuristProviderComponent,
-    RegisterProviderComponent
+    RegisterProviderComponent,
+    YourItinerariesComponent
   ],
   imports: [
     BrowserModule,
