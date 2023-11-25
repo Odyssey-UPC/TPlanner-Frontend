@@ -8,13 +8,13 @@
     width: 50%;
     margin: 100px auto;
     padding-bottom: 200px;
-    
+    color:white;
 }
 
 .container-faq {
     box-shadow: 0 0 15px -1px rgba(0,0,0,.1);
     padding: 30px;
-    background-image: url('https://cdn.discordapp.com/attachments/1120134585896939531/1177896613776203826/desktop-wallpaper-green-themed-minimalist-for-pinterest-landscape-2021.jpg?ex=65742cb4&is=6561b7b4&hm=cd1bc6bf31bca9b67a0be6b73ddc9f6a1d4e6f5f266de5e1c39eac33f37e779e&');
+    background-image: url('https://cdn.discordapp.com/attachments/1120134585896939531/1177901256791048252/night-mountains-minimalist-8k-wo.png?ex=65743107&is=6561bc07&hm=e73e001f55c430d7146a05d8978c0ff998779ac487c7d3c931eca4a4c343505f&');
     background-size: cover;
     background-position: center;
 }

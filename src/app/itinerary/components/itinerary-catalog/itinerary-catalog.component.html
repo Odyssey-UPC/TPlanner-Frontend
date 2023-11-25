@@ -13,7 +13,7 @@
         <img [src]="service.images[0]" alt="{{ service.serviceName }}" class="service-image">
       </div>
 
-      <button class="subscribe-button">Subscribe</button>
+      <button class="subscribe-button" (click)="suscribeToItinerary(itinerary.id)">Subscribe</button>
     </div>
   </div>
 </div>
