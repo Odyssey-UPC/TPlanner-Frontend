@@ -1,0 +1,17 @@
+.register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://cdn.discordapp.com/attachments/991473069942120498/1157238840940040242/fondo-login.png?ex=6517e228&is=651690a8&hm=a1e2c3c1b7d5fd36579f75f2a8417b6016e0ac57d5e8723734e673b676cd42f4&'); /* Ruta a tu imagen de fondo */
+    background-size:contain;
+    background-repeat:repeat-x;
+    background-position:0cqmin;
+}
+
+@media (max-width: 525px) {
+    .register-container {
+      background-size: cover;
+    }
+  }

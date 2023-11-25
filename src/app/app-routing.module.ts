@@ -11,8 +11,10 @@ import { QuestionFormComponent } from './Frequently-Asked-Questions/pages/questi
 import { DetailsComponent } from './tourist-service/pages/details/details.component';
 import { SectionSelectedProfileComponent } from './profile/components/section-selected-profile/section-selected-profile.component';
 import { RegisterServiceComponent } from './tourist-service/components/register-service/register-service.component';
+import { RegisterProviderComponent } from './register/pages/register-provider/register-provider.component';
 
 const routes: Routes = [
+  {path: "register-provider", component: RegisterProviderComponent},
   {path: "register-service", component: RegisterServiceComponent},
   {path: "selected-profile", component: SectionSelectedProfileComponent},
   {path: "preferences", component:PreferencesComponent},

@@ -9,9 +9,20 @@
 
 .input-email,
 .input-password,
-.input-confirm-password {
-  margin-bottom: 16px; 
+.input-confirm-password,
+.input-birthday {
+  width: 100%;
 }
+
+.input-email mat-form-field {
+  width: 100%;
+}
+
+.input-email input {
+  width: 100%;
+  box-sizing: border-box; /* Asegura que el ancho incluya el relleno y el borde */
+}
+
 
 .input-name {
   display: flex;
@@ -68,4 +79,17 @@
   background-color: #F95738E5 !important;
   color: #fff !important;
   border-radius: 20px;
+}
+
+.datos {
+  display: flex;
+  gap: 10px; /* Ajusta el espacio entre los elementos según sea necesario */
+}
+
+.datos mat-form-field {
+  flex: 1; /* Hace que cada elemento ocupe todo el espacio disponible */
+}
+
+.datos input {
+  width: 100%; /* Asegura que el input ocupe todo el ancho dentro del mat-form-field */
 }
