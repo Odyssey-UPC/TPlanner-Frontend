@@ -1,6 +1,9 @@
 .main-home-container{
     display: flex;
     flex-direction: column;
+    background-image: url('https://cdn.discordapp.com/attachments/1120134585896939531/1177894250520780800/snowy-winter-landscape-with-mountains-frozen-river-and-trees-vector.jpg?ex=65742a81&is=6561b581&hm=a484d0858182600caba84fc4b8d20e417e614d027ce4b3d09c90714bb70ca102&');
+    background-size: cover;
+    background-position: center;
 }
 
 app-seeker-home{

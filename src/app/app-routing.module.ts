@@ -12,6 +12,7 @@ import { DetailsComponent } from './tourist-service/pages/details/details.compon
 import { SectionSelectedProfileComponent } from './profile/components/section-selected-profile/section-selected-profile.component';
 import { RegisterServiceComponent } from './tourist-service/components/register-service/register-service.component';
 import { ItineraryCatalogComponent } from './itinerary/components/itinerary-catalog/itinerary-catalog.component';
+import { YourItinerariesComponent } from './itinerary/components/your-itineraries/your-itineraries.component';
 
 const routes: Routes = [
   {path: "register-service", component: RegisterServiceComponent},
@@ -27,6 +28,7 @@ const routes: Routes = [
   {path: "faq", component:FaqComponent},
   {path: "tourist-service/details/:id", component: DetailsComponent},
   {path: "itinerary-catalog", component: ItineraryCatalogComponent},
+  {path: "your-itineraries", component: YourItinerariesComponent},
   {path: "**", redirectTo: "login", pathMatch: "full"},
 ];
 

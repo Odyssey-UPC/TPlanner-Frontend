@@ -6,6 +6,9 @@
     top: 50%;
     left: 50%; 
     transform: translate(-50%, -50%);
+    background-image: url('https://cdn.discordapp.com/attachments/1120134585896939531/1177896613776203826/desktop-wallpaper-green-themed-minimalist-for-pinterest-landscape-2021.jpg?ex=65742cb4&is=6561b7b4&hm=cd1bc6bf31bca9b67a0be6b73ddc9f6a1d4e6f5f266de5e1c39eac33f37e779e&');
+    background-size: cover;
+    background-position: center;
   }
   
   h3 {
