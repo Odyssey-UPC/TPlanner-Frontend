@@ -11,6 +11,7 @@ import { QuestionFormComponent } from './Frequently-Asked-Questions/pages/questi
 import { DetailsComponent } from './tourist-service/pages/details/details.component';
 import { SectionSelectedProfileComponent } from './profile/components/section-selected-profile/section-selected-profile.component';
 import { RegisterServiceComponent } from './tourist-service/components/register-service/register-service.component';
+import { ItineraryCatalogComponent } from './itinerary/components/itinerary-catalog/itinerary-catalog.component';
 
 const routes: Routes = [
   {path: "register-service", component: RegisterServiceComponent},
@@ -24,7 +25,9 @@ const routes: Routes = [
   {path: "", redirectTo: "login", pathMatch: "full"},
   {path: "question-form", component: QuestionFormComponent },
   {path: "faq", component:FaqComponent},
-  {path: "tourist-service/details/:id", component: DetailsComponent}
+  {path: "tourist-service/details/:id", component: DetailsComponent},
+  {path: "itinerary-catalog", component: ItineraryCatalogComponent},
+  {path: "**", redirectTo: "login", pathMatch: "full"},
 ];
 
 @NgModule({
