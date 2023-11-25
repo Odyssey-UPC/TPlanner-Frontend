@@ -8,7 +8,7 @@
     <button mat-icon-button class="nav-button" [class.active]="activeTab === 'chat'" (click)="navigateTo('chat')">
       <mat-icon [style.color]="activeTab === 'chat' ? 'blue' : ''">chat</mat-icon>
     </button>
-    <button mat-icon-button class="nav-button" [class.active]="activeTab === 'subscriptions'" (click)="navigateTo('subscriptions')">
+    <button mat-icon-button class="nav-button" [class.active]="activeTab === 'your-itineraries'" (click)="navigateTo('your-itineraries')">
       <span class="material-icons" [style.color]="activeTab === 'subscriptions' ? 'blue' : ''">pending_actions</span>
     </button>
     <button mat-icon-button class="nav-button" [class.active]="activeTab === 'profile'" (click)="navigateTo('profile')">

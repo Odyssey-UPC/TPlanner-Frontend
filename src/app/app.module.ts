@@ -38,6 +38,7 @@ import { CardSelectedProfileComponent } from './profile/components/card-selected
 import { SectionSelectedProfileComponent } from './profile/components/section-selected-profile/section-selected-profile.component';
 import { RegisterServiceComponent } from './tourist-service/components/register-service/register-service.component';
 import { ItineraryCatalogComponent } from './itinerary/components/itinerary-catalog/itinerary-catalog.component';
+import { YourItinerariesComponent } from './itinerary/components/your-itineraries/your-itineraries.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +73,8 @@ import { ItineraryCatalogComponent } from './itinerary/components/itinerary-cata
     CardSelectedProfileComponent,
     SectionSelectedProfileComponent,
     RegisterServiceComponent,
-    ItineraryCatalogComponent
+    ItineraryCatalogComponent,
+    YourItinerariesComponent
   ],
   imports: [
     BrowserModule,
