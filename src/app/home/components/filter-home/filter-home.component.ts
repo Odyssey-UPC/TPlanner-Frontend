@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TouristServiceService } from 'src/app/tourist-service/services/tourist-service.service';
 import { TouristService } from 'src/app/tourist-service/models/tourist-service';
-import { TouristServiceThumbnailService } from 'src/app/tourist-service-thumbnail/services/tourist-service-thumbnail.service';
-
 @Component({
   selector: 'app-filter-home',
   templateUrl: './filter-home.component.html',
@@ -17,7 +15,6 @@ export class FilterHomeComponent implements OnInit {
 
   constructor(
     private touristServiceService: TouristServiceService,
-    private thumbnailService: TouristServiceThumbnailService,
 
   ) {}
 
@@ -26,32 +23,29 @@ export class FilterHomeComponent implements OnInit {
   }
 
   private getAllTouristService(){
+
     this.touristServiceService.getAllTouristServices().subscribe((response: any) =>{
 
-      this.touristServices = response.body
+      this.touristServices = response
 
       this.touristServices.forEach((touristService: TouristService)=>{
-
-        this.thumbnailService.getThumbnailByTouristServiceId(touristService.id).subscribe((response: any) =>{
-          touristService.thumbnails = response
-        })
 
       })
 
       this.touristServiceCategory1 = this.touristServices.filter((object: any) => {
-        return object.service_category_id === 1;
+        return object.serviceCategory === "ACTIVITIES";
       })
   
       this.touristServiceCategory2 = this.touristServices.filter((object: any) => {
-        return object.service_category_id === 2;
+        return object.serviceCategory === "HOTELS";
       })
   
       this.touristServiceCategory3 = this.touristServices.filter((object: any) => {
-        return object.service_category_id === 3;
+        return object.serviceCategory === "RESTAURANTS";
       })
   
       this.touristServiceCategory4 = this.touristServices.filter((object: any) => {
-        return object.service_category_id === 4;
+        return object.serviceCategory === "TOURS";
       })
 
       console.log(this.touristServices)

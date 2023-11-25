@@ -1,16 +1,34 @@
 export interface TouristService {
     id: any;
-    address_id: any;
-    service_name: any;
-    service_description: any;
-    service_date: any;
-    service_deadline: any;
+    city: {
+      id: any;
+      cityName: any;
+      country: {
+        id: any;
+        countryName: any;
+      };
+    };
+    serviceName: any;
+    serviceDescription: any;
+    serviceCategory: any;
+    serviceDate: any;
+    serviceDeadline: any;
     price: any;
     capacity: any;
-    service_category_id: any;
-    tourist_provider_id: any;
-    thumbnails: any;
-    main_thumbnail: any;
     content: any;
-}
+    images: any[];
+    touristProvider: {
+      id: any;
+      organizationName: any;
+      organizationDescription: any;
+      websiteLink: any;
+      user: {
+        username: any;
+        role: any;
+        birthdate: any;
+        email: any;
+        profileLink: any;
+      };
+    };
+  }
   
